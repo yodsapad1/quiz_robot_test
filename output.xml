@@ -1,131 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.12.6 on win32)" generated="2025-02-11T10:46:46.211448" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.12.6 on win32)" generated="2025-02-11T11:01:08.922567" rpa="false" schemaversion="5">
 <suite id="s1" name="Test Contact Us" source="C:\Users\yodsa\Documents\robot-tests\test_contact_us.robot">
 <test id="s1-t1" name="Contact Us Form Test" line="14">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-11T10:46:46.957318" level="INFO">Opening browser 'Chrome' to base url 'https://automationexercise.com'.</msg>
+<msg time="2025-02-11T11:01:09.541611" level="INFO">Opening browser 'Chrome' to base url 'https://automationexercise.com'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-11T10:46:46.957318" elapsed="8.014233"/>
+<status status="PASS" start="2025-02-11T11:01:09.540076" elapsed="12.489465"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-02-11T10:46:54.971551" elapsed="0.099597"/>
+<status status="PASS" start="2025-02-11T11:01:22.030591" elapsed="0.119245"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>AutomationExercise</arg>
 <arg>timeout=20s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-11T10:46:55.072313" elapsed="0.045285"/>
+<status status="PASS" start="2025-02-11T11:01:22.149836" elapsed="0.037992"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2025-02-11T10:46:55.117598" level="INFO">Clicking link 'Contact us'.</msg>
+<msg time="2025-02-11T11:01:22.192986" level="INFO">Clicking link 'Contact us'.</msg>
 <arg>Contact us</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-11T10:46:55.117598" elapsed="2.473445"/>
+<status status="PASS" start="2025-02-11T11:01:22.187828" elapsed="2.577312"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-11T10:47:00.592229" level="INFO">Slept 3 seconds.</msg>
+<msg time="2025-02-11T11:01:27.765795" level="INFO">Slept 3 seconds.</msg>
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-11T10:46:57.592063" elapsed="3.000166"/>
+<status status="PASS" start="2025-02-11T11:01:24.765140" elapsed="3.000655"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>xpath=//h2[translate(text(),'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz')='get in touch']</arg>
 <arg>timeout=20s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-02-11T10:47:00.592906" elapsed="0.069969"/>
+<status status="PASS" start="2025-02-11T11:01:27.765795" elapsed="0.087887"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-11T10:47:00.662875" level="INFO">Typing text 'Test User' into text field 'name=name'.</msg>
+<msg time="2025-02-11T11:01:27.854691" level="INFO">Typing text 'Test User' into text field 'name=name'.</msg>
 <arg>name=name</arg>
 <arg>${NAME}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-11T10:47:00.662875" elapsed="0.297464"/>
+<status status="PASS" start="2025-02-11T11:01:27.854691" elapsed="0.300432"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-11T10:47:00.960840" level="INFO">Typing text 'testuser@example.com' into text field 'name=email'.</msg>
+<msg time="2025-02-11T11:01:28.157170" level="INFO">Typing text 'testuser@example.com' into text field 'name=email'.</msg>
 <arg>name=email</arg>
 <arg>${EMAIL}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-11T10:47:00.960840" elapsed="0.374756"/>
+<status status="PASS" start="2025-02-11T11:01:28.156131" elapsed="0.281108"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-11T10:47:01.335596" level="INFO">Typing text 'Test Subject' into text field 'name=subject'.</msg>
+<msg time="2025-02-11T11:01:28.437239" level="INFO">Typing text 'Test Subject' into text field 'name=subject'.</msg>
 <arg>name=subject</arg>
 <arg>${SUBJECT}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-11T10:47:01.335596" elapsed="0.409426"/>
+<status status="PASS" start="2025-02-11T11:01:28.437239" elapsed="0.243920"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-11T10:47:01.745022" level="INFO">Typing text 'This is a test message.' into text field 'name=message'.</msg>
+<msg time="2025-02-11T11:01:28.681159" level="INFO">Typing text 'This is a test message.' into text field 'name=message'.</msg>
 <arg>name=message</arg>
 <arg>${MESSAGE}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-11T10:47:01.745022" elapsed="0.326270"/>
+<status status="PASS" start="2025-02-11T11:01:28.681159" elapsed="0.327635"/>
 </kw>
 <kw name="Choose File" owner="SeleniumLibrary">
-<msg time="2025-02-11T10:47:02.073478" level="INFO">Sending C:\Users\yodsa\Documents\testfile.txt to browser.</msg>
+<msg time="2025-02-11T11:01:29.008794" level="INFO">Sending C:\Users\yodsa\Documents\testfile.txt to browser.</msg>
 <arg>name=upload_file</arg>
 <arg>${FILE_PATH}</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<status status="PASS" start="2025-02-11T10:47:02.072372" elapsed="0.098184"/>
+<status status="PASS" start="2025-02-11T11:01:29.008794" elapsed="0.098620"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
 <arg>xpath=//input[@type='submit']</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2025-02-11T10:47:02.170556" elapsed="0.312973"/>
+<status status="PASS" start="2025-02-11T11:01:29.109398" elapsed="0.312689"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-11T10:47:04.483868" level="INFO">Slept 2 seconds.</msg>
+<msg time="2025-02-11T11:01:31.423618" level="INFO">Slept 2 seconds.</msg>
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-11T10:47:02.483529" elapsed="2.000339"/>
+<status status="PASS" start="2025-02-11T11:01:29.422087" elapsed="2.001531"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>xpath=//input[@type='submit']</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-02-11T10:47:04.483868" elapsed="0.052190"/>
+<status status="PASS" start="2025-02-11T11:01:31.423618" elapsed="0.048557"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-02-11T10:47:04.536058" level="INFO">Clicking button 'xpath=//input[@type='submit']'.</msg>
+<msg time="2025-02-11T11:01:31.473526" level="INFO">Clicking button 'xpath=//input[@type='submit']'.</msg>
 <arg>xpath=//input[@type='submit']</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-11T10:47:04.536058" elapsed="0.185879"/>
+<status status="PASS" start="2025-02-11T11:01:31.473015" elapsed="0.178779"/>
 </kw>
 <kw name="Handle Alert" owner="SeleniumLibrary">
-<msg time="2025-02-11T10:47:04.721937" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<msg time="2025-02-11T11:01:31.653273" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
 <arg>accept</arg>
 <doc>Handles the current alert and returns its message.</doc>
-<status status="PASS" start="2025-02-11T10:47:04.721937" elapsed="0.016257"/>
+<status status="PASS" start="2025-02-11T11:01:31.651794" elapsed="0.014173"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Success! Your details have been submitted successfully.</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-11T10:47:04.738194" elapsed="0.044541"/>
+<status status="PASS" start="2025-02-11T11:01:31.665967" elapsed="0.046494"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2025-02-11T10:47:04.784745" level="INFO">Clicking link 'Home'.</msg>
+<msg time="2025-02-11T11:01:31.712972" level="INFO">Clicking link 'Home'.</msg>
 <arg>Home</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-11T10:47:04.782735" elapsed="23.643219"/>
+<status status="PASS" start="2025-02-11T11:01:31.712972" elapsed="63.488701"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>AutomationExercise</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-02-11T10:47:28.425954" elapsed="0.024018"/>
+<status status="PASS" start="2025-02-11T11:02:35.203062" elapsed="0.029852"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-11T10:47:28.449972" elapsed="2.771565"/>
+<status status="PASS" start="2025-02-11T11:02:35.235515" elapsed="3.452050"/>
 </kw>
-<status status="PASS" start="2025-02-11T10:46:46.954205" elapsed="44.267332"/>
+<status status="PASS" start="2025-02-11T11:01:09.538868" elapsed="89.148697"/>
 </test>
-<status status="PASS" start="2025-02-11T10:46:46.222537" elapsed="44.999000"/>
+<status status="PASS" start="2025-02-11T11:01:08.926804" elapsed="89.766470"/>
 </suite>
 <statistics>
 <total>
